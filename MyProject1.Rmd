@@ -11,11 +11,18 @@ my favourite web sites are
 ```{r}
 data(iris)
 head(iris)
+png("/images/box1.png")
 boxplot(iris)
 ```
 
+![iris_box](/images/box1.png)
+
+
 Orange Trees data
 ```{r}
-v1 <- sample(500:1000, 10, repalce=TRUE)
+v1 <- sample(500:1000, 10, replace=TRUE)
+png("/images/bar1.png")
 barplot(v1, col=rainbow(10))
+dev.off()
 ```
+

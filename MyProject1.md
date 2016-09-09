@@ -25,25 +25,63 @@ head(iris)
 ```
 
 ```r
+png("/images/box1.png")
+```
+
+```
+## Warning in png("/images/box1.png"): unable to open file '/images/box1.png'
+## for writing
+```
+
+```
+## Warning in png("/images/box1.png"): opening device failed
+```
+
+```
+## Error in png("/images/box1.png"): unable to start png() device
+```
+
+```r
 boxplot(iris)
 ```
 
 ![plot of chunk unnamed-chunk-1](figure/unnamed-chunk-1-1.png)
 
+![iris_box](/images/box1.png)
+
+
 Orange Trees data
 
 ```r
-v1 <- sample(500:1000, 10, repalce=TRUE)
+v1 <- sample(500:1000, 10, replace=TRUE)
+png("/images/bar1.png")
 ```
 
 ```
-## Error in sample(500:1000, 10, repalce = TRUE): unused argument (repalce = TRUE)
+## Warning in png("/images/bar1.png"): unable to open file '/images/bar1.png'
+## for writing
+```
+
+```
+## Warning in png("/images/bar1.png"): opening device failed
+```
+
+```
+## Error in png("/images/bar1.png"): unable to start png() device
 ```
 
 ```r
 barplot(v1, col=rainbow(10))
 ```
 
+![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2-1.png)
+
+```r
+dev.off()
 ```
-## Error in barplot(v1, col = rainbow(10)): object 'v1' not found
+
 ```
+## null device 
+##           1
+```
+
