@@ -8,21 +8,22 @@ my favourite web sites are
 
 [education](http://www.edx.com)
 
-```{r}
+```{r iris}
 data(iris)
 head(iris)
-png("/images/box1.png")
+png("images/box1.png")
 boxplot(iris)
+dev.off()
 ```
 
 ![iris_box](/images/box1.png)
 
 
 Orange Trees data
-```{r}
+```{r vect}
 v1 <- sample(500:1000, 10, replace=TRUE)
-png("/images/bar1.png")
+png("images/bar1.png")
 barplot(v1, col=rainbow(10))
 dev.off()
 ```
-
+![iris_box](/images/bar1.png)
